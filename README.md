@@ -47,3 +47,9 @@ The gesture names used in the source code and those in our manuscript are differ
 ## APK
 
 Here is the [link](https://drive.google.com/file/d/18_LR8tk9XhDDLzaRJl-ec1YWTuMdGtHh/view?usp=sharing) to a pre-compiled apk file.
+
+## Reference
+
+If you use our source code or the APK, please cite the following references:
+
+Mingming Fan, Zhen Li, and Franklin Mingzhe Li. 2020. Eyelid Gestures on Mobile Devices for People withMotor Impairments. In ASSETS ’20: ACM SIGACCESS Conference on Computers and Accessibility, October 26–28,2020, Athens, Greece.ACM, New York, NY, USA.
