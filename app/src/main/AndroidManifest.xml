@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eyeinteraction"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1">
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon3"
+        android:label="EyeInteraction"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FaceTrackerActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".CalibrationStaticActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity android:name=".CalibrationStaticSetupActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity android:name=".CalibrationDynamicActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity android:name=".CalibrationDynamicSetupActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationOneActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationOneSetupActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationTwoTouchActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationTwoiBlinkActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationTwoSetupActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationThreeMethodOneActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationThreeMethodTwoActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationThreeMethodThreeActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".EvaluationThreeSetupActivity"
+            android:icon="@drawable/icon3"
+            android:label="EyeInteraction"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+    </application>
+
+</manifest>

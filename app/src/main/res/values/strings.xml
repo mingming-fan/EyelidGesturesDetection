@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">OK</string>
+<!--    <string name="permission_camera_rationale">本程序需要相机权限来识别眼皮运动</string>-->
+<!--    <string name="no_camera_permission">因为缺少相机权限，本程序即将退出</string>-->
+<!--    <string name="low_storage_error">磁盘空间不足，无法运行识别算法</string>-->
+    <!--<string-array name="eye_gestures">-->
+        <!--<item>&#45;&#45;自动模式&#45;&#45;</item>-->
+        <!--<item>睁开双眼</item>-->
+        <!--<item>只闭左眼</item>-->
+        <!--<item>只闭右眼</item>-->
+        <!--<item>闭合双眼</item>-->
+        <!--<item>&#45;&#45;测试中&#45;&#45;</item>-->
+    <!--</string-array>-->
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string-array name="eye_gestures">
+        <item>--Auto--</item>
+        <item>Open Both Eyes</item>
+        <item>Close Left Eye Only</item>
+        <item>Close Right Eye Only</item>
+        <item>Close Both Eyes</item>
+        <item>Evaluation</item>
+    </string-array>
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:id="@+id/layer1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/seafoamColor"
+        android:keepScreenOn="true">
+
+        <eyeinteraction.ui.camera.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:alpha = "0.0"
+            >
+        </eyeinteraction.ui.camera.CameraSourcePreview>
+
+        <TextView
+            android:id="@+id/textView_title_app1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity = "center"
+            android:text="APP 1"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/targettextcolor"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_presented"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity = "left"
+            android:text="Presented Text"
+            android:textColor="@color/targettextcolor"
+            android:layout_below="@+id/textView_title_app1"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:background="@drawable/switchviewbkg">
+
+        <ImageView  android:id="@+id/img_layer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/layer3" />
+
+        <ImageView  android:id="@+id/img_layer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dip"
+            app:srcCompat="@drawable/layer1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:background="@color/waveColor">
+
+        <TextView
+            android:id="@+id/textView_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity = "center"
+            android:text="APP 2"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/inputtextcolor"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_placeholder2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView_placeholder"
+            android:gravity = "left"
+            android:text="placeholder"
+            android:lines="3"
+            android:maxLines="3"
+            android:textSize="30sp"
+            android:alpha="0.0"/>
+
+        <EditText
+            android:id="@+id/editText_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_placeholder2"
+            android:ems="10"
+            android:textColor="@color/inputtextcolor"
+            android:text=""
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/textView_placeholder3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editText_Input"
+            android:gravity = "left"
+            android:text="                            "
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_textentry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_Input"
+            android:background="@color/indigoColor"
+            android:text="Enter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:background="@drawable/switchviewbkg">
+
+        <ImageView  android:id="@+id/img_layer21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/layer1" />
+
+        <ImageView  android:id="@+id/img_layer22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="70dip"
+            app:srcCompat="@drawable/layer3" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/bt_back"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/back"
+        android:background="@drawable/bkg"/>
+
+    <ImageButton
+        android:id="@+id/bt_home"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bt_back"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/bt_back"
+        android:src="@drawable/home"
+        android:background="@drawable/bkg"/>
+
+    <ImageButton
+        android:id="@+id/bt_overview"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/bt_home"
+        android:layout_toEndOf="@+id/bt_home"
+        android:src="@drawable/overview"
+        android:background="@drawable/bkg"/>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/topLayout"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:keepScreenOn="true">
+
+<eyeinteraction.ui.camera.CameraSourcePreview
+    android:id="@+id/preview"
+    android:layout_width="1dp"
+    android:layout_height="1dp">
+
+    <ImageView  android:id="@+id/imageviewbkg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bkgrey" />
+
+
+</eyeinteraction.ui.camera.CameraSourcePreview>
+
+
+<Spinner
+    android:id="@+id/eyegestures_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_command"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="command" />
+
+    <TextView
+        android:id="@+id/tv_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eye state feedback"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_calibration_static"
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:text="Start"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/bt_pause"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:text="Pause the timer" />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:keepScreenOn="true">
+
+<eyeinteraction.ui.camera.CameraSourcePreview
+    android:id="@+id/preview"
+    android:layout_width="1dp"
+    android:layout_height="1dp">
+
+    <ImageView  android:id="@+id/imageviewbkg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bkgrey" />
+
+</eyeinteraction.ui.camera.CameraSourcePreview>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "left"
+        android:text="TextView"
+        android:maxLines="3"
+        android:lines="4"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:lines="2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eye state feedback"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_calibration_static"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:gravity="center"
+        android:text="Start"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_redo"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:text="Redo" />
+
+    <Button
+        android:id="@+id/bt_pause"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:text="Pause the timer" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+
+</LinearLayout>

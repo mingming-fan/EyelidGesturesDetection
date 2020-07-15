@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <TableRow>
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text="ParticipantID:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/paramPart"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <!--<TableRow>-->
+
+            <!--<TextView-->
+                <!--android:gravity="right"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:text="Wear glasses:"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/paramGlasses"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="left"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow>-->
+            <!--<TextView-->
+                <!--android:gravity="right"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:text=" "-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+            <!--<TextView-->
+                <!--android:gravity="right"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:text=" "-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+        <!--</TableRow>-->
+
+        <TableRow>
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text="Number of targets:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/paramTrials"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text="Method: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/paramMethods"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text="Practice or Test: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/paramTest"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/bt_confirm"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:text="Confirm" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+
+
