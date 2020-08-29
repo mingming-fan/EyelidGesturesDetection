@@ -9,6 +9,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.DashPathEffect;
+import android.graphics.Paint;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
 import android.os.Bundle;
@@ -523,19 +525,39 @@ public final class CalibrationDynamicActivity extends AppCompatActivity implemen
             mGraphSeriesLeft.setColor(Color.BLUE);
             mGraphSeriesLeft.setTitle("Left Eye");
 
+            // Draw dashed line for right eye graph series.
+            Paint paintRight = new Paint();
+            paintRight.setStyle(Paint.Style.STROKE);
+            paintRight.setStrokeWidth(7);
+            paintRight.setColor(Color.CYAN);
+            paintRight.setPathEffect(new DashPathEffect(new float[]{8, 5}, 0));
+
             mGraphSeriesRight = new LineGraphSeries<>();
-            mGraphSeriesRight.setColor(Color.RED);
+//            mGraphSeriesRight.setColor(Color.RED);
             mGraphSeriesRight.setTitle("Right Eye");
+
+            mGraphSeriesRight.setDrawAsPath(true);
+            mGraphSeriesRight.setCustomPaint(paintRight);
 
             graph.addSeries(mGraphSeriesLeft);
             graph.addSeries(mGraphSeriesRight);
+            graph.setBackgroundColor(Color.WHITE);
+
+            // styling grid/labels
+            graph.getGridLabelRenderer().setGridColor(Color.RED);
+            graph.getGridLabelRenderer().setHighlightZeroLines(false);
+            graph.getGridLabelRenderer().setHorizontalLabelsColor(Color.BLACK);
+            graph.getGridLabelRenderer().setVerticalLabelsColor(Color.RED);
+            graph.getGridLabelRenderer().reloadStyles();
+
             // customize a little bit viewport
             Viewport viewport = graph.getViewport();
             viewport.setYAxisBoundsManual(true);
-            viewport.setMinY(-0.2);
+            viewport.setMinY(0);
             viewport.setMaxY(1.2);
-            graph.getLegendRenderer().setVisible(true);
-            graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
+            graph.getLegendRenderer().setVisible(false);
+//            graph.getLegendRenderer().setVisible(true);
+//            graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
 
         }
         else{

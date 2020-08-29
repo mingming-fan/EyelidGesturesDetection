@@ -21,12 +21,15 @@
 6. "TESTING ONE (ACCURACY)": test the accuracy of each eyelid gestures. 
   * Source code: eyeinteraction\EvaluationOneActivity.java
 
-7. "TESTING TWO (APP SWITCHING)": test the app switching interaction using eyelid gestures. 
+7. "TESTING TWO (APP SWITCHING)": test the app switching interaction using eyelid gestures. According to our matching schemes, users are able navigate between *apps* (B-R-, B-L-), *tabs/screens* (R-, L-), and *containers* (R, L).
   * Source code: eyeinteraction\EvaluationTwoiBlinkActivity.java
 
-8. All models and result files will be stored under the path returned by "getExternalFilesDir()": Android\data\eyeinteraction.mingming.research\files.
+8. "TESTING Three (TEXT ENTRY)": test the text entry interaction using eyelid gestures. 
+  * Source code: eyeinteraction\EvaluationThreeMethodTwoActivity.class (using eyelid gestures to switch between two applications for text entry) and eyeinteraction\EvaluationThreeMethodThreeActivity.class (using eyelid gestures + porous interfaces to switch between two applications for text entry).
 
-9. The main detection algorithm is implemented in eyeinteraction\utils\Classifier2D.java, which is called by all other Android Activities. 
+9. All models and result files will be stored under the path returned by "getExternalFilesDir()": Android\data\eyeinteraction.mingming.research\files.
+
+10. The main detection algorithm is implemented in eyeinteraction\utils\Classifier2D.java, which is called by all other Android Activities. 
 
 ## Gesture names
 

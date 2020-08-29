@@ -64,15 +64,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_evaluationOne" />
 
-<!--    <Button-->
-<!--        android:id="@+id/bt_evaluationthree"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:onClick="sendMessage"-->
-<!--        android:text="Testing Three (Text Entry)"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/bt_evaluationTwo" />-->
+    <Button
+        android:id="@+id/bt_evaluationthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="Testing Three (Text Entry)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_evaluationTwo" />
 
 
 </LinearLayout>

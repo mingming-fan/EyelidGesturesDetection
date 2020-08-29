@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent13 = new Intent(this, EvaluationTwoSetupActivity.class);
                 startActivity(intent13);
                 break;
-//            case R.id.bt_evaluationthree:
-//                Intent intent14 = new Intent(this, EvaluationThreeSetupActivity.class);
-//                startActivity(intent14);
-//                break;
+            case R.id.bt_evaluationthree:
+                Intent intent14 = new Intent(this, EvaluationThreeSetupActivity.class);
+                startActivity(intent14);
+                break;
             default:
                 break;
         }
