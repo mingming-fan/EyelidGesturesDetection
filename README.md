@@ -56,4 +56,9 @@ Here is the [link](https://drive.google.com/file/d/18_LR8tk9XhDDLzaRJl-ec1YWTuMd
 
 If you use our source code or the APK, please cite the following papers:
 
-Mingming Fan, Zhen Li, and Franklin Mingzhe Li. 2020. Eyelid Gestures on Mobile Devices for People with Motor Impairments. In ASSETS ’20: ACM SIGACCESS Conference on Computers and Accessibility, October 26–28,2020, Athens, Greece. ACM, New York, NY, USA.
+1. Mingming Fan, Zhen Li, and Franklin Mingzhe Li. 2020. Eyelid Gestures on
+Mobile Devices for People with Motor Impairments. In The 22nd International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS
+’20), October 26–28, 2020, Virtual Event, Greece. ACM, New York, NY, USA,
+8 pages. https://doi.org/10.1145/3373625.3416987
+
+2. Zhen Li, Mingming Fan, Ying Han, and Khai N. Truong. 2020. IWink: Exploring Eyelid Gestures on Mobile Devices. In Proceedings of the 1st International Workshop on Human-centric Multimedia Analysis (HuMA'20). Association for Computing Machinery, New York, NY, USA, 83–89. DOI:https://doi.org/10.1145/3422852.3423479
