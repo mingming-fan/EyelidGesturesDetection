@@ -152,7 +152,7 @@ public final class CalibrationDynamicActivity extends AppCompatActivity implemen
     private CountDownTimer countdown = new CountDownTimer(7000, 1000) {
         @Override
         public void onTick(long l) {
-            mBtEvaluation.setText("Ready for this gesture?\nTimer: " + l / 1000);
+            mBtEvaluation.setText("Perform the above gesture in \n " + l / 1000 + " seconds");
 //            mBtEvaluation.setText("请准备好做以上动作\n倒计时：" + l / 1000);
         }
 
@@ -209,7 +209,7 @@ public final class CalibrationDynamicActivity extends AppCompatActivity implemen
     // Count down unified callback:
     private void commonTick(long l) {
         collectCounting = true;
-        mBtEvaluation.setText("Start! Please wait for a few seconds if you have finished..." + l / 1000);
+        mBtEvaluation.setText("Perform the gesture Now! \n " + l / 1000);
 //        mBtEvaluation.setText("开始！做完动作后请等待程序自动结束..." + l / 1000);
     }
 

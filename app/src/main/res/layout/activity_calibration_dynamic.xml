@@ -53,19 +53,22 @@ android:keepScreenOn="true">
         android:layout_height="127dp"
         android:gravity="center"
         android:text="Start"
+        android:textAllCaps="false"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/bt_redo"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:text="Redo" />
+        android:text="Redo"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/bt_pause"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:text="Pause the timer" />
+        android:text="Pause the timer"
+        android:textAllCaps="false" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graph"

@@ -13,10 +13,11 @@
         <!--<item>&#45;&#45;测试中&#45;&#45;</item>-->
     <!--</string-array>-->
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
-    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission. The application will now exit.</string>
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
     <string-array name="eye_gestures">
-        <item>--Auto--</item>
+<!--        <item>&#45;&#45;Auto&#45;&#45;</item>-->
+        <item>Target State</item>
         <item>Open Both Eyes</item>
         <item>Close Left Eye Only</item>
         <item>Close Right Eye Only</item>

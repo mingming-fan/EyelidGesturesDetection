@@ -45,18 +45,21 @@ android:keepScreenOn="true">
         android:layout_width="match_parent"
         android:layout_height="329dp"
         android:text="Start"
+        android:textAllCaps="false"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/bt_cancel"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:text="Cancel" />
+        android:text="Cancel"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/bt_pause"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:text="Pause the timer" />
+        android:text="Pause the timer"
+        android:textAllCaps="false" />
 
 </LinearLayout>

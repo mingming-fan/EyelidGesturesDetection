@@ -126,7 +126,8 @@ public final class CalibrationStaticActivity extends AppCompatActivity implement
         public void onTick(long l) {
             if (l / 1000 > 2)
             {
-                bt_calibration.setText("Please open both eyes and read the instructions.\nTimer：" + (l/1000 - 2));
+//                bt_calibration.setText("Please open both eyes and read the instructions.\nTimer：" + (l/1000 - 2));
+                bt_calibration.setText("Prepare your eyes in the above state in " + (l/1000 - 2) + " seconds");
 //                bt_calibration.setText("请睁开双眼，阅读动作介绍，做好准备\n倒计时：" + (l/1000 - 2));
             }
             else if (l / 1000 > 1) {
@@ -539,10 +540,16 @@ public final class CalibrationStaticActivity extends AppCompatActivity implement
         if (trial >= 0) {
             label = "[" + trial + "]: ";
         }
+//        if (chineseStr)
+//            tv_command.setText(label + EN2CN.get(currentGesture) + "\n 1. 请先熟悉要求的眼皮动作，然后做好准备; \n 2. 每做完一个动作会有相应提示，也可以要求额外休息时间。");
+//        else
+//            tv_command.setText(label + currentGesture + "\n 1. Please get ready to perform the eye gesture; \n 2. There will be breaks during the session.");
+
+
         if (chineseStr)
-            tv_command.setText(label + EN2CN.get(currentGesture) + "\n 1. 请先熟悉要求的眼皮动作，然后做好准备; \n 2. 每做完一个动作会有相应提示，也可以要求额外休息时间。");
+            tv_command.setText(label + EN2CN.get(currentGesture) );
         else
-            tv_command.setText(label + currentGesture + "\n 1. Please get ready to perform the eye gesture; \n 2. There will be breaks during the session.");
+            tv_command.setText(label + currentGesture);
     }
 
     @Override
@@ -556,7 +563,8 @@ public final class CalibrationStaticActivity extends AppCompatActivity implement
         else if (currentGesture.contains("Evaluation")){
             setupEvaluation();
         }
-        else if (currentGesture.contains("Auto")) {
+//        else if (currentGesture.contains("Auto")) {
+        else if (currentGesture.contains("Target")) {
             // Resume auto mode:
             mIsAutoMode = true;
             if (mTrialCnt < mStaticGestureSequence.size()) {
@@ -591,7 +599,8 @@ public final class CalibrationStaticActivity extends AppCompatActivity implement
             }
         }
         else {
-            tv_command.setText("For the researcher: \n 1. Save the data and train the model. 2. Test the model.\n");
+            //tv_command.setText("For the researcher: \n 1. Save the data and train the model. 2. Test the model.\n");
+            tv_command.setText("Press Start to test the eyelid state classifier\n");
             bt_pause.setText("--The timer has been stopped--");
 
             Integer[] sizePosNeg = mClassifier.getSegmentTrainingDataSize();
@@ -713,7 +722,8 @@ public final class CalibrationStaticActivity extends AppCompatActivity implement
         }
         else {
             if (counterMode)
-                bt_calibration.setText("Start! \nData is being collected... ...");
+//                bt_calibration.setText("Start! \nData is being collected... ...");
+                bt_calibration.setText("Data is being collected... ...");
             else
                 bt_calibration.setText("Stop");
         }
@@ -797,6 +807,7 @@ public final class CalibrationStaticActivity extends AppCompatActivity implement
         }
         else {
             bt_calibration.setText("Start");
+            //bt_calibration.setText("\nData is being collected...");
         }
         bt_calibration.setBackgroundColor(Color.rgb(20, 204, 54));
     }

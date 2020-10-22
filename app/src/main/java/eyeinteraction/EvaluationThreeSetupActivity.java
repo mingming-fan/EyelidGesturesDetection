@@ -21,7 +21,7 @@ public class EvaluationThreeSetupActivity extends AppCompatActivity implements V
 
     String[] numOfPhrases = {"5", "1", "2", "10", "15", "20"};
 
-    String[] numofMethods = {"normal", "iBlink", "porousInterface+iBlink"};
+    String[] numofMethods = {"normal_app_switching", "iWink_Switching", "iWink_Porous_Switching"};
 
     String[] practiceOrTests = { "practice","test"};
 
