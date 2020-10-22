@@ -48,7 +48,7 @@
 
 
     <Button
-        android:id="@+id/bt_evaluationOne"
+        android:id="@+id/bt_performanceMeasure"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="sendMessage"
@@ -57,6 +57,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_calibration_dynamic" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/bt_evaluationOne"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="sendMessage"-->
+<!--        android:text="4. Eyelid Gesture Performance Measure"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/bt_calibration_dynamic" />-->
 
     <Button
         android:id="@+id/bt_evaluationTwo"
@@ -67,10 +79,10 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_evaluationOne" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_performanceMeasure" />
 
     <Button
-        android:id="@+id/bt_evaluationthree"
+        android:id="@+id/bt_evaluationThree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="sendMessage"

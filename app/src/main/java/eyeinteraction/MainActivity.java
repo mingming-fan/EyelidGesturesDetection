@@ -28,15 +28,19 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent10 = new Intent(this, CalibrationDynamicSetupActivity.class);
                 startActivity(intent10);
                 break;
-            case R.id.bt_evaluationOne:
-                Intent intent12 = new Intent(this, EvaluationOneSetupActivity.class);
+            case R.id.bt_performanceMeasure:
+                Intent intent12 = new Intent(this, PerformanceMeasureSetupActivity.class);
                 startActivity(intent12);
                 break;
+//            case R.id.bt_evaluationOne:
+//                Intent intent12 = new Intent(this, EvaluationOneSetupActivity.class);
+//                startActivity(intent12);
+//                break;
             case R.id.bt_evaluationTwo:
                 Intent intent13 = new Intent(this, EvaluationTwoSetupActivity.class);
                 startActivity(intent13);
                 break;
-            case R.id.bt_evaluationthree:
+            case R.id.bt_evaluationThree:
                 Intent intent14 = new Intent(this, EvaluationThreeSetupActivity.class);
                 startActivity(intent14);
                 break;
