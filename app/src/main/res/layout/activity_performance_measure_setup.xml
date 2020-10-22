@@ -73,20 +73,6 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
-        <TableRow>
-
-            <TextView
-                android:gravity="right"
-                android:paddingRight="5dp"
-                android:text="Num. of repeats :"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <Spinner
-                android:id="@+id/paramTrials"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-        </TableRow>
 
         <TableRow>
             <TextView
@@ -101,67 +87,6 @@
                 android:text=" "
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
-
-<!--        <TableRow>-->
-
-<!--            <TextView-->
-<!--                android:gravity="right"-->
-<!--                android:paddingRight="5dp"-->
-<!--                android:text="Pre-trained model:"-->
-<!--                android:textAppearance="?android:attr/textAppearanceMedium" />-->
-
-<!--            <CheckBox-->
-<!--                android:id="@+id/checkBox_preTrainedModel"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="use pretrained model" />-->
-<!--        </TableRow>-->
-
-        <TableRow>
-        <TextView
-            android:gravity="right"
-            android:paddingRight="5dp"
-            android:text=" "
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <TextView
-            android:gravity="right"
-            android:paddingRight="5dp"
-            android:text=" "
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-    </TableRow>
-
-
-        <TableRow>
-            <TextView
-                android:gravity="right"
-                android:paddingRight="5dp"
-                android:text=" "
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:gravity="right"
-                android:paddingRight="5dp"
-                android:text=" "
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-        </TableRow>
-
-
-<!--        <TableRow>-->
-
-<!--            <TextView-->
-<!--                android:gravity="right"-->
-<!--                android:paddingRight="5dp"-->
-<!--                android:text="Eye state graph:"-->
-<!--                android:textAppearance="?android:attr/textAppearanceMedium" />-->
-
-<!--            <CheckBox-->
-<!--                android:id="@+id/checkBox_graph"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="show graph" />-->
-<!--        </TableRow>-->
-
 
         <TableRow>
             <TextView
