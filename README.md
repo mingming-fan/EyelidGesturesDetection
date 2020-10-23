@@ -2,7 +2,7 @@
 
 ## Demo video
 
-To get a sense of how well our algorithm works in real-time and its applications, please watch a demo video here: https://www.youtube.com/watch?v=WpDDUEHhy18&feature=youtu.be
+To get a sense of how well our algorithm works in real-time and its applications, please watch a demo video here: https://www.youtube.com/watch?v=GgpW4tmvdM0&feature=youtu.be
 
 
 ## How to install the app?
