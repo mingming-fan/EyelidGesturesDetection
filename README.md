@@ -16,7 +16,7 @@ Download and install the APK to your phone from the following link: https://gith
 
 1. For the first-time user, the eyelid gesture classifier needs to be trained. Complete the first three steps shown in the app landing user interface (UI): "Step 1: Eye Detection Checking", "Step 2: Eyelid State Training", "Step 3: Eyelid Gesture Training". 
 
-   * You only need to train the model once only. 
+   * Hint:You only need to train the model once only. 
 
 
 2. Click "Step 1: Eye Detection Checking" to check whether the app detects your eyes or not. You would see the real-time detection result overlay on the front-facing camera stream. Try to close an eyelid and see whether it detects the number of open eyes correctly or not.
