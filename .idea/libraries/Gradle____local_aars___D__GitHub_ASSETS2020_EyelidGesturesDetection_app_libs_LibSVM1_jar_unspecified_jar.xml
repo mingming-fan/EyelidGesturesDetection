@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: ./app/libs/LibSVM1.jar">
+  <library name="Gradle: __local_aars__:D./GitHub/ASSETS2020/EyelidGesturesDetection/app/libs/LibSVM1.jar:unspecified@jar">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/app/libs/LibSVM1.jar!/" />
     </CLASSES>

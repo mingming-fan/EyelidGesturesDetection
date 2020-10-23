@@ -20,7 +20,7 @@
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon3"
-        android:label="EyeInteraction"
+        android:label="EyelidInteraction"
         android:screenOrientation="portrait"
         android:theme="@style/Theme.AppCompat">
         <meta-data
@@ -33,7 +33,7 @@
         <activity
             android:name=".MainActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -45,7 +45,7 @@
         <activity
             android:name=".FaceTrackerActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <meta-data
@@ -55,28 +55,28 @@
 
         <activity android:name=".CalibrationStaticActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
         <activity android:name=".CalibrationStaticSetupActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
         <activity android:name=".CalibrationDynamicActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
         <activity android:name=".CalibrationDynamicSetupActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -84,7 +84,7 @@
         <activity
             android:name=".EvaluationOneActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -92,7 +92,7 @@
         <activity
             android:name=".EvaluationOneSetupActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -100,7 +100,7 @@
         <activity
             android:name=".EvaluationTwoTouchActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -108,7 +108,7 @@
         <activity
             android:name=".PerformanceMeasureActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
@@ -116,14 +116,14 @@
         <activity
             android:name=".PerformanceMeasureSetupActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
         <activity
             android:name=".EvaluationTwoiBlinkActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -131,7 +131,7 @@
         <activity
             android:name=".EvaluationTwoSetupActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -139,7 +139,7 @@
         <activity
             android:name=".EvaluationThreeMethodOneActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -147,7 +147,7 @@
         <activity
             android:name=".EvaluationThreeMethodTwoActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -155,7 +155,7 @@
         <activity
             android:name=".EvaluationThreeMethodThreeActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
@@ -163,7 +163,7 @@
         <activity
             android:name=".EvaluationThreeSetupActivity"
             android:icon="@drawable/icon3"
-            android:label="EyeInteraction"
+            android:label="EyelidInteraction"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
