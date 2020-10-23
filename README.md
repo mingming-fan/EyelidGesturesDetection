@@ -8,7 +8,7 @@ To get a sense of how well our algorithm works in real-time and its applications
 ## How to install the app?
 Our app currently works on Android smartphones with version 8.0 or above.
  
-Download and install the APK to your phone from the following link: https://github.com/mingming-fan/EyelidGesturesDetection/releases/tag/v0.1
+Download and install the APK to your phone from the following link: https://github.com/mingming-fan/EyelidGesturesDetection/releases
 
 
 
