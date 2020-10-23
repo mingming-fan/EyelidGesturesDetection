@@ -203,7 +203,8 @@
                 android:id="@+id/bt_confirm"
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
-                android:text="Confirm" />
+                android:text="Confirm"
+                android:textAllCaps="false" />
         </TableRow>
     </TableLayout>
 </ScrollView>

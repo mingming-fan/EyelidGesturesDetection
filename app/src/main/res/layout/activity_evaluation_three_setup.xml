@@ -23,6 +23,7 @@
 
             <Spinner
                 android:id="@+id/paramPart"
+                android:layout_width="255dp"
                 android:layout_weight="1"
                 android:gravity="left"
                 android:singleLine="true" />
@@ -76,7 +77,7 @@
             <TextView
                 android:gravity="right"
                 android:paddingRight="5dp"
-                android:text="Number of phrases:"
+                android:text="Num. of phrases:"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <Spinner
@@ -105,7 +106,7 @@
             <TextView
                 android:gravity="right"
                 android:paddingRight="5dp"
-                android:text="Method: "
+                android:text="Switch method: "
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <Spinner
@@ -169,6 +170,24 @@
                 android:paddingRight="5dp"
                 android:text=" "
                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text="Switch method:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:lines="6"
+                android:maxLines="6"
+                android:text="normal: press switch app button\neyelid_gesture: close an eyelid"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
         <TableRow>
@@ -184,6 +203,7 @@
                 android:text=" "
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
+
 
         <TableRow>
             <TextView
@@ -196,7 +216,8 @@
                 android:id="@+id/bt_confirm"
                 android:layout_width="198dp"
                 android:layout_height="wrap_content"
-                android:text="Confirm" />
+                android:text="Confirm"
+                android:textAllCaps="false" />
         </TableRow>
     </TableLayout>
 </ScrollView>

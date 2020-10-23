@@ -1,35 +1,64 @@
 # EyelidGesturesDetection
 
-## Usage
+## Demo video
+
+To get a sense of how well our algorithm works in real-time and its applications, please watch a demo video here: 
+
+
+## How to install the app?
+Our app currently works on Android smartphones with version 8.0 or above.
+ 
+Download and install the APK to your phone from the following link: https://github.com/mingming-fan/EyelidGesturesDetection/releases/tag/v0.1
+
+
+
+## How to use the app?
+
+1. For the first-time user, the eyelid gesture classifier needs to be trained. Complete the first three steps shown in the app landing user interface (UI): "Step 1: Eye Detection Checking", "Step 2: Eyelid State Training", "Step 3: Eyelid Gesture Training". You only need to train the model once only. 
+
+
+2. Click "Step 1: Eye Detection Checking" to check whether the app detects your eyes or not. You would see the real-time detection result overlay on the front-facing camera stream. Try to close an eyelid and see whether it detects the number of open eyes correctly or not.
+
+  * Troubleshoot: if you cannot see the camera feed, you need to grant the corresponding permissions. In this case, the permission to use the Camera is needed (see AndroidManifest.xml file for details).
+
+4. Click "Step 2: Eyelid State Training" to train the model to detect eyelid states (i.e., both eyelids open, both eyelids close, open right eyelid only, and open left eyelid only). On the UI, you can choose a participant ID (PID). You can simply proceed with the default one.  
+
+  * There will be a short 'beep' after each data-collection block, so you will know even if you have closed both eyes (i.e., the 'both eyelid close' state).
+  * Source code: eyeinteraction\CalibrationStaticActivity.java
+
+5. Click "Step 3: Eyelid Gesture Training" to train the model to detect nine eyelid gestures. By default, the model only needs to collect '5' samples per eyelid gesture. However, more samples per gesture would likely increase the recognition accuracy. Make sure you use the same PID as the previous step.
+
+  * If the face detection status shows "Face detection failed", or when the eyelid state detection result keeps fluctuating, you can try to adjust the camera angle or your ambient light condition. 
+  * For consistency, you can try to count for certain numbers consistently for short and long gestures, respectively. E.g., you can try to count number '1' while performing *R*/*L*/*B* gestures (short gestures), and count numbers '1,2,3' while performing *R-*/*L-*/*B-* gestures (long gestures with one eyelid state), and count '1,2,3; 4,5,6' while performing *B-L-*/*B-R-* gestures (long gestures with two eyelid states). 
+  * Source code: eyeinteraction\CalibrationDynamicActivity.java
+
+
+After completing the first three steps, the model will have been created and saved. You can then test the model's performance by clicking on "Eyelid Gesture Testing."
+ 
+
+6. Click "Eyelid Gesture Testing." Choose the same PID for which you trained your models in the previous steps and Click "Confirm." On the next screen, click on the "Start" Button。 Then, you can perform any of the nine eyelid gestures and see the real-time recognition result. The UI also plots the probability of each eyelid being open in real-time. 
+  * Source code: eyeinteraction\EvaluationOneActivity.java
+
+
+We have also created two applications for you to interact with your phone using your eyelid gestures. One is "Within and Between Apps Navigation," and the other one is "Cross-App Text Entry App"
+
+7. "Within and Between Apps Navigation": navigate within and between apps using eyelid gestures. According to our gesture matching scheme, you can navigate between *apps* (B-R-, B-L-), *tabs/screens* witin an app (R-, L-), and *containers* within a tab/screen (R, L) only using eyelid gestures. 
+  * Source code: eyeinteraction\EvaluationTwoiBlinkActivity.java
+
+8. "Cross-App Text Entry App": One simulated app shows a target phrase, and your goal is to type the phrase into another simulated app. You can use "normal" switch method by pressing the switch app button at the bottom of the screen. You can also use "eyelid_gesture" to switch apps by closing any one of your eyelids. 
+
+  * Source code: eyeinteraction\EvaluationThreeMethodTwoActivity.class (using eyelid gestures to switch between two applications for text entry) and eyeinteraction\EvaluationThreeMethodThreeActivity.class (using eyelid gestures + porous interfaces to switch between two applications for text entry).
+
+9. All models and result files will be stored under the path returned by "getExternalFilesDir()": Android\data\eyeinteraction.mingming.research\files.
+
+
+## How to use the code?
 
 1. Clone the project and run the Gradle Script using Android Studio.
 
 2. Install and launch the app on an Android 8.0 or above smartphone (We have not yet tested the app on Android 7.0 or below, but it probably will work as well).
 
-3. Click the first item on the UI, "1. Eye Detection and Tracking," to start. You would see the real-time detection result overlay on the front-facing camera stream, and the probability of each eye being open will change as you wink your eyes. Because you have not trained the model yet, the detection results are only for demonstration and may not be accurate.
-  * Troubleshoot: if you cannot see the camera feed, make sure you grant the corresponding permissions (see AndroidManifest.xml file for details).
-
-4. "2. Eyelid State Training and Testing": train the model to detect eyelid states. We suggest using '200' data points as the parameter. 
-  * There will be a short 'beep' after each data-collection block, so you will know even if you have closed both eyes (i.e., the 'both eyelid close' state).
-  * Source code: eyeinteraction\CalibrationStaticActivity.java
-
-5. "3. Eyelid Gesture Training and Testing": train the model to detect eyelid gestures. To make training as simple as posible, we only need '5' samples per eyelid gesture. However, more samples would likely increase the recognition accuracy. Each user will be assigned with a PID, so make sure you use the same PID as the "TRAINING ONE" phase so the models will be named consistently.
-  * If the face detection status shows "Face detection failed", or when the eyelid state detection result keeps fluctuating, you can try to adjust the camera angle or light condition. 
-  * For consistency, you can try to count for certain numbers consistently for short and long gestures, respectively. E.g., you can try to count number '1' while performing *R*/*L*/*B* gestures (short gestures), and count numbers '1,2,3' while performing *R-*/*L-*/*B-* gestures (long gestures with one eyelid state), and count '1,2,3; 4,5,6' while performing *B-L-*/*B-R-* gestures (long gestures with two eyelid states). 
-  * Source code: eyeinteraction\CalibrationDynamicActivity.java
-
-6. "4. Eyelid Gesture Performance Measure": test the accuracy of each eyelid gestures. 
-  * Source code: eyeinteraction\EvaluationOneActivity.java
-
-7. "5. App Navigation Demo": test the app switching interaction using eyelid gestures. According to our matching schemes, users are able navigate between *apps* (B-R-, B-L-), *tabs/screens* (R-, L-), and *containers* (R, L).
-  * Source code: eyeinteraction\EvaluationTwoiBlinkActivity.java
-
-8. "6. Text Entry Demo": test the text entry interaction using eyelid gestures. 
-  * Source code: eyeinteraction\EvaluationThreeMethodTwoActivity.class (using eyelid gestures to switch between two applications for text entry) and eyeinteraction\EvaluationThreeMethodThreeActivity.class (using eyelid gestures + porous interfaces to switch between two applications for text entry).
-
-9. All models and result files will be stored under the path returned by "getExternalFilesDir()": Android\data\eyeinteraction.mingming.research\files.
-
-10. The main detection algorithm is implemented in eyeinteraction\utils\Classifier2D.java, which is called by all other Android Activities. 
+3. The main detection algorithm is implemented in eyeinteraction\utils\Classifier2D.java, which is called by all other Android Activities. 
 
 ## Gesture names
 
@@ -47,9 +76,6 @@ The gesture names used in the source code and those in our manuscript are differ
 | cB-RLo | B-L- |
 | dB | BOB |
 
-## APK
-
-Here is the [link](https://drive.google.com/file/d/18_LR8tk9XhDDLzaRJl-ec1YWTuMdGtHh/view?usp=sharing) to a pre-compiled apk file.
 
 
 ## References

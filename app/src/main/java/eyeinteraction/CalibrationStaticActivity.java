@@ -723,7 +723,7 @@ public final class CalibrationStaticActivity extends AppCompatActivity implement
         else {
             if (counterMode)
 //                bt_calibration.setText("Start! \nData is being collected... ...");
-                bt_calibration.setText("Data is being collected... ...");
+                bt_calibration.setText("Keep your eyelids in this state...");
             else
                 bt_calibration.setText("Stop");
         }

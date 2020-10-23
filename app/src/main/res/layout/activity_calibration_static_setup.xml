@@ -50,7 +50,7 @@
             <TextView
                 android:gravity="right"
                 android:paddingRight="5dp"
-                android:text="Number of data points:"
+                android:text="Num. of data points:"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <Spinner
@@ -99,7 +99,8 @@
                 android:id="@+id/bt_confirm"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="Confirm" />
+                android:text="Confirm"
+                android:textAllCaps="false" />
         </TableRow>
     </TableLayout>
 </ScrollView>
